@@ -149,8 +149,8 @@ apt list --installed 2> /dev/null | grep -q net-tools
     echo -e 'SSHCOMAX="3"                                       # Set ssh ClientAliveCountMax.              ' >> ${CISRC}
     echo -e 'SSHMAXSS="10"                                      # Set ssh MaxSessions.                      ' >> ${CISRC}
     echo -e 'SSHMAXST="10:30:60"                                # Set ssh Maxstartups.                      ' >> ${CISRC}
-    echo -e 'FW="ufw"                                           # iptables,nftables,ufw,blank for no update.' >> ${CISRC}
-    echo -e 'GRP="Y"                                            # Update bootloader password.               ' >> ${CISRC}
+    echo -e 'FW=""                                              # iptables,nftables,ufw,blank for no update.' >> ${CISRC}
+    echo -e 'GRP=""                                             # Update bootloader password.               ' >> ${CISRC}
     echo -e 'GRU="Y"                                            # Enable unrestricted boot.                 ' >> ${CISRC}
     echo -e 'GRF="40_custom"                                    # Grub custom config file.                  ' >> ${CISRC}
     echo -e 'IPV6=""                                            # Set to Y to enable IPv6.                  ' >> ${CISRC}
